@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://www.magalabs.com.br/sitemap.xml
