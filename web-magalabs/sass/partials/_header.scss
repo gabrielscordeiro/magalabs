@@ -1,1 +1,22 @@
 @import "partials/base";
+
+header {
+    padding: 20px 0;
+
+    .seja-incubado {
+        font-size: em(16);
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: $cor-texto;
+        font-weight: bold;
+        margin-right: 50px;
+
+        &:hover {
+            color: $cor-base;
+        }
+    }
+
+    .redes-sociais {
+        width: 120px;
+    }
+}

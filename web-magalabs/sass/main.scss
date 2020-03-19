@@ -25,11 +25,6 @@ body {
     line-height: 1.5;
     font-size: 16px;
     font-family: "Noto Sans", sans-serif;
-    padding-top: 97px;
-
-    @include breakpoint($break-medium-big) {
-        padding-top: 71px;
-    }
 }
 
 a {
