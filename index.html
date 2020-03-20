@@ -2,7 +2,7 @@
 <html lang="pt-br" xmlns:fb="https://www.facebook.com/2008/fbml">
 
 <head>
-    <title>Magalabs Incubadora</title>
+    <title>Magalabs</title>
     <link href="web-magalabs/image/favicon.png" type="image/x-icon" rel="icon" />
     <link href="web-magalabs/image/favicon.png" type="image/x-icon" rel="shortcut icon" />
 
@@ -11,22 +11,22 @@
     <meta name="rating" content="general" />
     <meta name="country" content="BRA" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#00cba9" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#00cba9" />
-    <meta name="msapplication-navbutton-color" content="#00cba9" />
+    <meta name="theme-color" content="#fe6604" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fe6604" />
+    <meta name="msapplication-navbutton-color" content="#fe6604" />
 
     <meta name="robots" content="index, follow" />
     <meta property="og:url" content="https://www.magalabs.com.br" />
-    <meta property="og:title" content="Magalabs Incubadora" />
+    <meta property="og:title" content="Magalabs" />
     <meta property="og:site_name" content="Magalabs" />
     <meta property="og:description"
-        content="Programa de Afiliados para o seu e-commerce. Venda mais e tenha controle e transparência na gerência dos seus afiliados.">
+        content="A Magalabs Incubadora nasce com objetivo de fomentar o empreendedorismo de base tecnológica no Alto Vale do Itajaí e o nosso programa de incubação vai muito além de simplesmente lhe oferecer um local. Queremos fazer com que você chegue mais longe, de forma mais rápida e eficiente.">
 
     <meta name="description"
-        content="Programa de Afiliados para o seu e-commerce. Venda mais e tenha controle e transparência na gerência dos seus afiliados.">
-    <meta name="title" content="Magalabs Incubadora">
+        content="A Magalabs Incubadora nasce com objetivo de fomentar o empreendedorismo de base tecnológica no Alto Vale do Itajaí e o nosso programa de incubação vai muito além de simplesmente lhe oferecer um local. Queremos fazer com que você chegue mais longe, de forma mais rápida e eficiente.">
+    <meta name="title" content="Magalabs">
     <meta name="keywords"
-        content="afiliados, ganhe dinheiro, programa de afiliados, venda mais, transparencia, ecommerce" />
+        content="startup, incubadora" />
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700&display=swap"
         rel="stylesheet">
@@ -62,24 +62,27 @@
 
     <header>
         <div class="container flex center space-between">
-            <h1 title="Magalabs Incubadora">
-                <a href="/">
-                    <img src="web-magalabs/image/logo.svg" alt="Magalabs Incubadora" title="Magalabs Incubadora" />
+            <h1 title="Magalabs">
+                <a href="/"> 
+                    <img src="web-magalabs/image/logo.svg" alt="Magalabs" title="Magalabs" />
                 </a>
             </h1>
 
             <div class="acoes-social flex center">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGTqLwHKrdVwCGgZbTUsy8Jp-c6Ljer-DCuZa8xanQ1imxrg/viewform" class="seja-incubado">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGTqLwHKrdVwCGgZbTUsy8Jp-c6Ljer-DCuZa8xanQ1imxrg/viewform" class="seja-incubado" target="_blank">
                     Seja um incubado
                 </a>
                 <div class="redes-sociais flex center space-between">
-                    <a href="" target="_blank" title="Magalabs no Instagram">
+                    <a href="https://www.instagram.com/magalabsincubadora/" target="_blank" title="Magalabs no Instagram">
                         <img src="web-magalabs/image/header/icon-instagram.svg" alt="Magalabs no Instagram" />
                     </a>
-                    <a href="" target="_blank" title="Magalabs  no Facebook">
-                        <img src="web-magalabs/image/header/icon-facebook.svg" alt="Magalabs no Facebook" />
-                    </a>
-                    <a href="" target="_blank" title="Magalabs no Linkedin">
+                    <!--
+
+                        <a href="" target="_blank" title="Magalabs  no Facebook">
+                            <img src="web-magalabs/image/header/icon-facebook.svg" alt="Magalabs no Facebook" />
+                        </a>
+                    -->
+                    <a href="//www.linkedin.com/company/magalabs/" target="_blank" title="Magalabs no Linkedin">
                         <img src="web-magalabs/image/header/icon-linkedin.svg" alt="Magalabs no Linkedin" />
                     </a>
                 </div>
@@ -95,7 +98,7 @@
                         Propósito
                     </h2>
                     <p>
-                        Potencializando negócios escaláveis e sustentáveis que promovam o desenvolvimento econômico e
+                        Potencializar negócios escaláveis e sustentáveis que promovam o desenvolvimento econômico e
                         social do Alto Vale do Itajaí.
                     </p>
                 </div>
@@ -154,6 +157,25 @@
             </div>
         </div>
 
+        <div id="maps"></div>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXaZAPhgo7bGZrEpKARnp-CDTCbd38Gp4&callback=initMap" type="text/javascript"></script>
+        <script type="text/javascript">
+            function initMap() {
+                var latLng = {lat: -27.2391518, lng: -49.6757256};
+                var mapDiv = document.getElementById('maps');
+                var map = new google.maps.Map(mapDiv, {
+                    center: latLng,
+                    zoom: 16,
+                    scrollwheel: false,
+                });
+                var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map,
+                    title: 'Magamobi E-Business S/A'
+                });
+            }
+        </script>
+
     </div>
 
     <footer itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
@@ -166,7 +188,7 @@
 
         <div class="container flex center space-between">
             <a href="/">
-                <img src="web-magalabs/image/logo.svg" alt="Magalabs Incubadora" title="Magalabs Incubadora" />
+                <img src="web-magalabs/image/logo.svg" alt="Magalabs" title="Magalabs" />
             </a>
 
             <div class="informacoes-contato flex column">
@@ -174,14 +196,14 @@
                 <a href="mailto:odair.rosa@magamobi.com.br" target="_blank" rel="nofollow" class="contato-item">
                     E-mail: odair.rosa@magamobi.com.br
                 </a>
-                <a href="tel+554735208017" target="_blank" rel="nofollow" class="contato-item">
+                <a href="tel:+554735208017" target="_blank" rel="nofollow" class="contato-item">
                     Telefone: (47) 3520-8017
                 </a>
             </div>
 
             <div class="mantenedores">
                 <h4>Mantenedores</h4>
-                <div class="lista-mantenedores flex space-between center">
+                <div class="lista-mantenedores flex space-between">
                     <div class="logo-mantenedor">
                         <img src="web-magalabs/image/footer/logo-magamobi-investimentos.svg"
                             alt="Magamobi Investimentos" />
@@ -190,7 +212,9 @@
                         <img src="web-magalabs/image/footer/logo-magamobi-tecnopark.svg" alt="Magamobi Tecnopark" />
                     </div>
                     <div class="logo-mantenedor">
-                        <img src="web-magalabs/image/footer/logo-magaventures.svg" alt="Magaventures" />
+                        <a href="https://www.magaventures.com.br/" target="_blank">
+                            <img src="web-magalabs/image/footer/logo-magaventures.svg" alt="Magaventures" class="magaventures">
+                        </a>
                     </div>
                 </div>
             </div>
