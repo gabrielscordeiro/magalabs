@@ -12,6 +12,10 @@
         color: #fff;
         font-size: em(28);
         letter-spacing: 3px;
+
+        @include breakpoint($break-medium) {
+            font-size: em(23);
+        }
     }
 }
 
@@ -19,24 +23,45 @@
     padding: 50px 0;
     border-bottom: 10px solid #fff;
 
+    @include breakpoint($break-medium) {
+        padding: 30px 0;
+    }
+
     p {
         font-size: em(20);
         color: #fff;
         margin-top: 30px;
         letter-spacing: 1px;
         padding: 0 200px;
+
+        @include breakpoint($break-medium) {
+            padding: 0 10px;
+            font-size: em(15);
+            margin-top: 10px;
+        }
     }
 }
 
 .valores {
     padding: 50px 0 100px 0;
 
+    @include breakpoint($break-medium) {
+        padding: 50px 0;
+    }
+
     .lista-valores {
         margin-top: 50px;
+        @include breakpoint($break-medium) {
+            flex-direction: column;
+        }
     }
 
     .valor-item {
         text-align: center;
+
+        @include breakpoint($break-medium) {
+            margin: 20px auto;
+        }
 
         img {
             display: block;
@@ -54,6 +79,7 @@
 
 .ideia-negocio {
     position: relative;
+    border-bottom: 10px solid $cor-secundaria;
 
     img {
         display: block;
@@ -85,6 +111,11 @@
             font-weight: bold;
             color: #fff;
             @include text-shadow(3px 3px 2px rgba(150, 150, 150, 1));
+
+            @include breakpoint($break-medium) {
+                font-size: em(20);
+                text-align: center;
+            }
         }
 
         a.inscrever-programa {
@@ -97,6 +128,10 @@
             padding: 10px 20px;
             border-radius: 10px;
             margin-top: 30px;
+
+            @include breakpoint($break-medium) {
+                font-size: em(14);
+            }
 
             &:hover {
                 background: darken(#1bb16f, 10);
